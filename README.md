@@ -1,4 +1,3 @@
-````md
 ---
 title: VeritasOps
 emoji: 🛡️
