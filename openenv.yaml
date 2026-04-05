@@ -1,0 +1,37 @@
+spec_version: 1
+name: veritasops
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8000
+
+metadata:
+  title: VeritasOps
+  description: >
+    A benchmark environment for misinformation incident response under
+    uncertainty, limited moderation resources, and dynamic virality.
+  authors:
+    - Siddharth Jagtap
+  tags:
+    - misinformation
+    - moderation
+    - trust-and-safety
+    - benchmark
+    - reinforcement-learning
+    - decision-making
+  version: "1.0.0"
+
+benchmark:
+  id: veritasops-benchmark
+  description: >
+    Agents must prioritize, verify, and intervene on potentially harmful
+    claims while balancing evidence uncertainty, virality, and limited
+    intervention budgets.
+  task_ids:
+    - task_easy
+    - task_medium
+    - task_hard
+  primary_metric: final_score
+  success_criteria: >
+    Maximize final moderation quality score while minimizing harmful spread,
+    avoiding false censorship, and using resources efficiently.

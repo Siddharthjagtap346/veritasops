@@ -1,0 +1,62 @@
+{
+  "task_id": "task_medium",
+  "name": "multi_claim_prioritization",
+  "max_steps": 7,
+  "resources": {
+    "verification_budget": 2,
+    "intervention_budget": 2
+  },
+  "claims": [
+    {
+      "claim_id": "C1",
+      "text": "Herbal steam kills all viruses instantly",
+      "ground_truth": "false",
+      "harm_severity": 0.9,
+      "virality_potential": 0.8,
+      "uncertainty": 0.6,
+      "risk_level": 0.85,
+      "spread": {
+        "views": 15000,
+        "shares": 3000,
+        "growth_rate": 1.25
+      },
+      "evidence": [
+        {"text": "Health authority warns against this claim", "credibility": 0.9}
+      ]
+    },
+    {
+      "claim_id": "C2",
+      "text": "Masks reduce spread of respiratory illness",
+      "ground_truth": "true",
+      "harm_severity": 0.3,
+      "virality_potential": 0.5,
+      "uncertainty": 0.4,
+      "risk_level": 0.4,
+      "spread": {
+        "views": 10000,
+        "shares": 1200,
+        "growth_rate": 1.1
+      },
+      "evidence": [
+        {"text": "Peer-reviewed studies support mask efficacy", "credibility": 0.9}
+      ]
+    },
+    {
+      "claim_id": "C3",
+      "text": "A new supplement may help recovery",
+      "ground_truth": "uncertain",
+      "harm_severity": 0.5,
+      "virality_potential": 0.4,
+      "uncertainty": 0.8,
+      "risk_level": 0.5,
+      "spread": {
+        "views": 8000,
+        "shares": 900,
+        "growth_rate": 1.15
+      },
+      "evidence": [
+        {"text": "Early small study suggests possible benefit", "credibility": 0.5}
+      ]
+    }
+  ]
+}

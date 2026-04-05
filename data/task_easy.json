@@ -1,0 +1,29 @@
+{
+  "task_id": "task_easy",
+  "name": "single_claim_verification",
+  "max_steps": 6,
+  "resources": {
+    "verification_budget": 2,
+    "intervention_budget": 2
+  },
+  "claims": [
+    {
+      "claim_id": "C1",
+      "text": "Vitamin C cures COVID-19",
+      "ground_truth": "false",
+      "harm_severity": 0.8,
+      "virality_potential": 0.6,
+      "uncertainty": 0.5,
+      "risk_level": 0.8,
+      "spread": {
+        "views": 12000,
+        "shares": 2400,
+        "growth_rate": 1.2
+      },
+      "evidence": [
+        {"text": "WHO reports no evidence for this claim", "credibility": 0.9},
+        {"text": "A social post claims personal success", "credibility": 0.2}
+      ]
+    }
+  ]
+}

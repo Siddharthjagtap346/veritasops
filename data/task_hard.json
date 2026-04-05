@@ -1,0 +1,96 @@
+{
+  "task_id": "task_hard",
+  "name": "crisis_surge_response",
+  "max_steps": 8,
+  "resources": {
+    "verification_budget": 3,
+    "intervention_budget": 2
+  },
+  "claims": [
+    {
+      "claim_id": "C1",
+      "text": "Boiling garlic water cures severe infection",
+      "ground_truth": "false",
+      "harm_severity": 0.95,
+      "virality_potential": 0.95,
+      "uncertainty": 0.65,
+      "risk_level": 0.95,
+      "spread": {
+        "views": 50000,
+        "shares": 9000,
+        "growth_rate": 1.35
+      },
+      "evidence": [
+        {"text": "Doctors warn this claim is dangerous and false", "credibility": 0.95}
+      ]
+    },
+    {
+      "claim_id": "C2",
+      "text": "Vaccines reduce hospitalization risk",
+      "ground_truth": "true",
+      "harm_severity": 0.4,
+      "virality_potential": 0.7,
+      "uncertainty": 0.3,
+      "risk_level": 0.5,
+      "spread": {
+        "views": 30000,
+        "shares": 4000,
+        "growth_rate": 1.15
+      },
+      "evidence": [
+        {"text": "Large-scale clinical evidence supports this", "credibility": 0.95}
+      ]
+    },
+    {
+      "claim_id": "C3",
+      "text": "A rare herbal compound might help some patients",
+      "ground_truth": "uncertain",
+      "harm_severity": 0.45,
+      "virality_potential": 0.5,
+      "uncertainty": 0.85,
+      "risk_level": 0.55,
+      "spread": {
+        "views": 12000,
+        "shares": 1400,
+        "growth_rate": 1.18
+      },
+      "evidence": [
+        {"text": "Evidence remains preliminary and inconclusive", "credibility": 0.55}
+      ]
+    },
+    {
+      "claim_id": "C4",
+      "text": "Lemon juice prevents all viral infections",
+      "ground_truth": "false",
+      "harm_severity": 0.7,
+      "virality_potential": 0.75,
+      "uncertainty": 0.6,
+      "risk_level": 0.8,
+      "spread": {
+        "views": 22000,
+        "shares": 3500,
+        "growth_rate": 1.22
+      },
+      "evidence": [
+        {"text": "Medical experts state there is no such protection", "credibility": 0.9}
+      ]
+    },
+    {
+      "claim_id": "C5",
+      "text": "Warm water improves comfort during illness",
+      "ground_truth": "true",
+      "harm_severity": 0.1,
+      "virality_potential": 0.2,
+      "uncertainty": 0.25,
+      "risk_level": 0.2,
+      "spread": {
+        "views": 5000,
+        "shares": 300,
+        "growth_rate": 1.05
+      },
+      "evidence": [
+        {"text": "General supportive care recommendations mention hydration", "credibility": 0.8}
+      ]
+    }
+  ]
+}
