@@ -19,6 +19,13 @@ tags:
 
 # 🛡️ VeritasOps
 
+![Benchmark Score](https://img.shields.io/badge/Average%20Score-0.8488-success)
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green?logo=fastapi)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)
+![OpenEnv](https://img.shields.io/badge/OpenEnv-Compatible-orange)
+![AI Safety](https://img.shields.io/badge/AI-Safety-critical)
+
 **VeritasOps** is a real-world **OpenEnv benchmark environment** for **misinformation incident response**.
 
 It simulates the decision-making workflow of a **Trust & Safety moderation team** that must identify, verify, prioritize, and intervene on potentially harmful claims under:
